@@ -6,4 +6,5 @@ do
 aws ec2 create-tags \
     --resources ${line} \
     --tags "Key=$key,Value=$value"
+echo "tagging ${line}"
 done
